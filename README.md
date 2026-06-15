@@ -1,0 +1,2 @@
+# ADNK
+AnyDesk Nag Killer
