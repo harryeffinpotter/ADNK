@@ -10,12 +10,12 @@ And press any key and let it rip.
 There is a lot of fluff in the script to make it pretty, if you just want to know how to do it yourself, it is simply a self elevating powershell script with flashy colors that runs the following commands:
 
 Stop process:
-`Stop-Process -Name AnyDesk -Force`
+```Stop-Process -Name AnyDesk -Force```
 
 Delete data from ProgramData:
-`$anyDeskData = Join-Path $env:ProgramData 'AnyDesk'`
-`Remove-Item -Path (Join-Path $anyDeskData 'service*'), (Join-Path $anyDeskData 'system*') -Force`
+```$anyDeskData = Join-Path $env:ProgramData 'AnyDesk'```
+```Remove-Item -Path (Join-Path $anyDeskData 'service*'), (Join-Path $anyDeskData 'system*') -Force```
 
 Relaunch process:
-`$anyDeskExe = "C:\Program Files (x86)\AnyDesk\AnyDesk.exe"`
-`Start-Process -FilePath $anyDeskExe`
+```$anyDeskExe = "C:\Program Files (x86)\AnyDesk\AnyDesk.exe"```
+```Start-Process -FilePath $anyDeskExe```
